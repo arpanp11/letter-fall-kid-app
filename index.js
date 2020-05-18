@@ -1,6 +1,7 @@
 const { body } = document;
 const scoreEl = document.getElementById('score');
-const reset = document.getElementById('reset');
+// TODO: add reset button
+// const reset = document.getElementById('reset');
 
 let score = 0;
 
@@ -16,6 +17,18 @@ window.addEventListener('keydown', (e) => {
     }
   });
 });
+
+// TODO: reset function
+// reset.addEventListener('click', () => {
+//   scoreEl.innerText = 0;
+//   myStopFunction();
+// });
+
+// var myVar = setInterval(gameBoard, 1000);
+
+// function myStopFunction() {
+//   clearInterval(myVar);
+// }
 
 setInterval(gameBoard, 1000);
 
